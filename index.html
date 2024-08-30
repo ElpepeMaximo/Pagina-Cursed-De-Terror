@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cursed de Terror</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://64.media.tumblr.com/4df5b7de068f0e503fd13bf03ac45446/8516d8666ec527e1-87/s540x810/4dac3bcbb117b17cfacba6dd61237ca12b4b91c5.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #dcdcdc;
+            font-family: 'Creepster', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff0000;
+            font-size: 4em;
+            margin-top: 20px;
+            animation: flicker 3s infinite alternate;
+        }
+        p {
+            margin: 20px;
+            font-size: 1.2em;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            width: 300px;
+            margin: 10px;
+            transition: transform 0.3s, filter 0.3s, box-shadow 0.3s;
+            border: 10px solid #8b0000; /* Borde color sangre */
+            box-shadow: 0 0 20px 5px rgba(139, 0, 0, 0.7); /* Sombra con efecto sangriento */
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+            filter: sepia(1);
+            box-shadow: 0 0 30px 10px rgba(139, 0, 0, 0.9); /* Aumenta el efecto de la sombra al pasar el ratón */
+        }
+        .arabic-text {
+            font-size: 1.5em;
+            color: #ff0000;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #ff4500, /* Resplandor */
+                         0 0 20px #ff4500,
+                         0 0 30px #ff4500,
+                         0 0 40px #ff8c00,
+                         0 0 70px #ff8c00,
+                         0 0 80px #ffa500,
+                         0 0 100px #ffa500;
+            animation: burn 2s infinite alternate;
+        }
+        @keyframes flicker {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 0.7; }
+        }
+        @keyframes burn {
+            0% {
+                text-shadow: 0 0 5px #ff4500, 0 0 10px #ff4500, 0 0 15px #ff8c00, 0 0 20px #ff8c00, 0 0 25px #ffa500, 0 0 30px #ffa500, 0 0 35px #ff4500;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500, 0 0 30px #ff8c00, 0 0 40px #ff8c00, 0 0 70px #ffa500, 0 0 80px #ffa500, 0 0 100px #ff4500;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Otro Lado</h1>
+    <p>Las sombras aquí son más profundas... y te observan.</p>
+    <div class="image-gallery">
+        <img src="https://i.pinimg.com/736x/19/b6/ac/19b6ac72836fc0619437fb4c7da9b542.jpg" alt="Cursed Image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw05wGlD9OWyVrnyGP5hLj93_LWc18myDySA&s" alt="Cursed Image">
+        <img src="https://i.pinimg.com/236x/18/06/be/1806bef69a4df5ee94e66a6d3232c4b7.jpg" alt="Cursed Image">
+        <img src="https://i.pinimg.com/236x/87/d0/e0/87d0e05c6d06af776f71b654ad3a0c64.jpg" alt="Cursed Image">
+    </div>
+    <p class="arabic-text">هذا هو الراب في بيرو
+        مرة أخرى
+        مرحبا بكم في موسيقى الراب 
+        كل شيء أراه في الشارع بني اللون
+        ألمس طفلاً وهو بني
+        أخبرني أنه تيلين وهو بني
+        صموئيل لديه قضيب جيد ويضيف الفطائر</p>
+</body>
+</html>
